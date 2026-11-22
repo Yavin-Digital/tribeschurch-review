@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tribes Church | Planning Center Review Deck</title>
+<meta name="description" content="Review deck: how Tribes Church's Planning Center workflows run today, and Planning Center vs Subsplash.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/deck.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-flow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="16" width="7" height="5" rx="1.5"/><path d="M6.5 8v4.5h11V16"/></g></symbol>
+    <symbol id="i-form" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></g></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13V5.5a1.5 1.5 0 013 0V11M11 10V4.5a1.5 1.5 0 013 0V11M14 10.5V6a1.5 1.5 0 013 0v7.5a6.5 6.5 0 01-6.5 6.5h-.4a6 6 0 01-4.9-2.6L3.6 14.3a1.5 1.5 0 012.3-1.9L8 14.5"/></g></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l9 16H3L12 4z"/><path d="M12 10v4M12 17.2v.1"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></g></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></g></symbol>
+    <symbol id="i-q" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 014.8.9c0 1.7-2.4 2.2-2.4 3.6M12 17v.1"/></g></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18M10.6 6.1A9.6 9.6 0 0112 6c5 0 8.5 4.5 9.5 6a17 17 0 01-2.7 3.2M6.6 7.6A16 16 0 002.5 12c1 1.5 4.5 6 9.5 6a9 9 0 004.3-1.1"/><path d="M9.9 9.9a3 3 0 004.2 4.2"/></g></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M7 20h10M5 7h14"/><path d="M5 7l-3 6a3 3 0 006 0L5 7zM19 7l-3 6a3 3 0 006 0l-3-6z"/></g></symbol>
+    <symbol id="i-gavel" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h10M13.5 4.5l6 6M10.5 7.5l6 6M12 6l-3.5 3.5 6 6L18 12M11.5 12L4 19.5"/></g></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6.5v13.5L9 17.5l6 2.5 6-2.5V4l-6 2.5L9 4z"/><path d="M9 4v13.5M15 6.5V20"/></g></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></g></symbol>
+    <symbol id="i-swipe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13M7 12l5 5 5-5"/></g></symbol>
+  </defs>
+</svg>
+
+<div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+<header class="topbar">
+  <span class="brand">Tribes Church <span class="muted">Review</span></span>
+  <button class="icon-btn" id="tocOpen" aria-label="Open slide list" aria-controls="toc" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+</header>
+
+<nav class="toc" id="toc" aria-label="Slides" hidden>
+  <div class="toc-inner">
+    <div class="toc-head"><h2>Slides</h2><button class="icon-btn" id="tocClose" aria-label="Close slide list"><svg><use href="#i-close"/></svg></button></div>
+    <ol id="tocList"></ol>
+  </div>
+</nav>
+
+<main class="deck" id="deck">
+
+<!-- 1 -->
+<section class="slide slide-title" data-title="Title">
+  <div class="card card-hero">
+    <p class="eyebrow">Review deck | Prototype</p>
+    <h1>Tribes Church: how follow-up works today, and whether to move it</h1>
+    <p class="lead">A plain-language summary of two documents prepared by The Tribe Maker: the Planning Center Workflow Map and the Planning Center vs Subsplash comparison.</p>
+    <p class="meta">Source documents dated November 20, 2026. Planning Center was reviewed read-only. Subsplash is described from official documentation only.</p>
+    <p class="hint"><svg class="ic"><use href="#i-swipe"/></svg> Swipe, scroll, or use arrow keys</p>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="slide" data-title="What this deck covers">
+  <div class="card">
+    <h2>What this deck covers</h2>
+    <div class="grid grid-3">
+      <div class="tile"><span class="tile-ic"><svg><use href="#i-map"/></svg></span><h3>1. Planning Center today</h3><p>The five workflows, the forms that feed them, what is automated, what is done by hand, and the gaps.</p></div>
+      <div class="tile"><span class="tile-ic"><svg><use href="#i-scale"/></svg></span><h3>2. Planning Center vs Subsplash</h3><p>The recommendation, key findings, the seven-phase migration path, and what is still unconfirmed.</p></div>
+      <div class="tile"><span class="tile-ic"><svg><use href="#i-gavel"/></svg></span><h3>3. Decisions</h3><p>The choices church leaders need to make before anything changes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="slide slide-divider" data-title="Section 1: Planning Center today">
+  <div class="card card-divider">
+    <p class="eyebrow">Section 1</p>
+    <h2>How Planning Center workflows run today</h2>
+    <p class="lead">A workflow is a checklist of follow-up steps. Each person who needs follow-up becomes a "card" that moves through the steps.</p>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="slide" data-title="At a glance">
+  <div class="card">
+    <h2>At a glance</h2>
+    <div class="stats">
+      <div class="stat"><span class="num">5</span><span class="lbl">active workflows</span></div>
+      <div class="stat"><span class="num">27</span><span class="lbl">open forms</span></div>
+      <div class="stat"><span class="num">5</span><span class="lbl">forms add people to a workflow</span></div>
+      <div class="stat"><span class="num">0</span><span class="lbl">step automations in any workflow</span></div>
+      <div class="stat"><span class="num">8</span><span class="lbl">people lists, none with an automation</span></div>
+      <div class="stat"><span class="num">0</span><span class="lbl">overdue or unassigned cards at capture</span></div>
+    </div>
+    <p class="note">Two workflows are fed automatically by forms. Three get cards only when staff add them by hand. Two more forms feed a workflow our review account could not see.</p>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="slide" data-title="The five workflows">
+  <div class="card">
+    <h2>The five workflows</h2>
+    <div class="grid grid-wf">
+      <article class="wf">
+        <h3>First Time Guest</h3>
+        <ul class="facts"><li><b>6</b> steps</li><li><b>362</b> completed</li><li><b>3</b> waiting</li></ul>
+        <p class="enter auto"><svg class="ic"><use href="#i-bolt"/></svg> Fed by Connect Card and TribesKids Check-in Form</p>
+        <p>Steps shared by two staff members.</p>
+      </article>
+      <article class="wf">
+        <h3>Benevolence</h3>
+        <ul class="facts"><li><b>5</b> steps</li><li><b>9</b> completed</li><li><b>0</b> waiting</li></ul>
+        <p class="enter auto"><svg class="ic"><use href="#i-bolt"/></svg> Fed by Benevolence Request form</p>
+        <p>All five steps handled by one staff member.</p>
+      </article>
+      <article class="wf">
+        <h3>Be Baptized</h3>
+        <ul class="facts"><li><b>1</b> step</li><li><b>1</b> completed</li><li><b>0</b> waiting</li></ul>
+        <p class="enter manual"><svg class="ic"><use href="#i-hand"/></svg> Manual only</p>
+        <p>One step: Contact.</p>
+      </article>
+      <article class="wf">
+        <h3>I Have Decided Card</h3>
+        <ul class="facts"><li><b>1</b> step</li><li><b>7</b> completed</li><li><b>0</b> waiting</li></ul>
+        <p class="enter manual"><svg class="ic"><use href="#i-hand"/></svg> Manual only</p>
+        <p>One step: Contact, overdue after 3 days.</p>
+      </article>
+      <article class="wf">
+        <h3>Interest in Joining a Tribe</h3>
+        <ul class="facts"><li><b>1</b> step</li><li><b>48</b> completed</li><li><b>0</b> waiting</li></ul>
+        <p class="enter manual"><svg class="ic"><use href="#i-hand"/></svg> Manual only</p>
+        <p>One step: an initial email.</p>
+      </article>
+      <article class="wf wf-hidden">
+        <h3>Hidden workflow</h3>
+        <ul class="facts"><li>Steps unknown</li></ul>
+        <p class="enter auto"><svg class="ic"><use href="#i-bolt"/></svg> Fed by Plan Your Visit and TribesYouth Intern Application</p>
+        <p>Not visible to our review account; name and steps unknown.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 6 FLOW -->
+<section class="slide" data-title="How people flow into workflows">
+  <div class="card card-wide">
+    <h2>How people flow into workflows</h2>
+    <div class="flow-legend"><span><i class="dot dot-auto"></i>Form adds the card automatically</span><span><i class="dot dot-manual"></i>Staff add the card by hand</span></div>
+    <div class="flow-head" aria-hidden="true"><span>How people enter</span><span></span><span>Workflow</span><span></span><span>Steps (in order)</span></div>
+
+    <div class="flow-row">
+      <div class="flow-src"><div class="chip auto"><svg class="ic"><use href="#i-form"/></svg>Connect Card</div><div class="chip auto"><svg class="ic"><use href="#i-form"/></svg>TribesKids Check-in Form</div></div>
+      <div class="flow-arrow"><svg><use href="#i-arrow"/></svg></div>
+      <div class="flow-wf"><strong>First Time Guest</strong><span>6 steps | 3 waiting | 362 completed</span></div>
+      <div class="flow-arrow"><svg><use href="#i-arrow"/></svg></div>
+      <ol class="flow-steps"><li>Review Card Info</li><li>Welcome E-Mail</li><li>Send Welcome Card</li><li>Welcome Text (staff member 1)</li><li>Welcome Text (staff member 2)</li><li>Next Steps</li></ol>
+    </div>
+
+    <div class="flow-row">
+      <div class="flow-src"><div class="chip auto"><svg class="ic"><use href="#i-form"/></svg>Benevolence Request</div></div>
+      <div class="flow-arrow"><svg><use href="#i-arrow"/></svg></div>
+      <div class="flow-wf"><strong>Benevolence</strong><span>5 steps | 0 waiting | 9 completed</span></div>
+      <div class="flow-arrow"><svg><use href="#i-arrow"/></svg></div>
+      <ol class="flow-steps"><li>Review Form and Decide</li><li>Contact Individual</li><li>Alert Individual</li><li>Make a Note in Profile</li><li>Follow Up Contact</li></ol>
+    </div>
+
+    <div class="flow-row">
+      <div class="flow-src"><div class="chip auto"><svg class="ic"><use href="#i-form"/></svg>Plan Your Visit</div><div class="chip auto"><svg class="ic"><use href="#i-form"/></svg>TribesYouth Intern Application</div></div>
+      <div class="flow-arrow"><svg><use href="#i-arrow"/></svg></div>
+      <div class="flow-wf flow-wf-hidden"><strong>Hidden workflow</strong><span>No access; name and steps unknown</span></div>
+      <div class="flow-arrow"><svg><use href="#i-arrow"/></svg></div>
+      <ol class="flow-steps flow-steps-unknown"><li>Steps not visible to our review account</li></ol>
+    </div>
+
+    <div class="flow-row">
+      <div class="flow-src"><div class="chip manual"><svg class="ic"><use href="#i-hand"/></svg>Staff add cards by hand</div></div>
+      <div class="flow-arrow"><svg><use href="#i-arrow"/></svg></div>
+      <div class="flow-wf flow-wf-stack"><strong>Be Baptized</strong><strong>I Have Decided Card</strong><strong>Interest in Joining a Tribe</strong></div>
+      <div class="flow-arrow"><svg><use href="#i-arrow"/></svg></div>
+      <ul class="flow-steps flow-steps-plain"><li>Contact</li><li>Contact</li><li>Email</li></ul>
+    </div>
+    <p class="note">Every step in every workflow is "Assign to a person." No step sends an email or takes an action on its own.</p>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="slide" data-title="The forms behind the workflows">
+  <div class="card">
+    <h2>The forms behind the workflows</h2>
+    <p class="sub">27 forms are open. Here is what they do when someone submits one.</p>
+    <div class="grid grid-3">
+      <div class="tile">
+        <span class="tile-ic"><svg><use href="#i-flow"/></svg></span>
+        <h3>5 add people to a workflow</h3>
+        <ul class="plain"><li>Connect Card (121 submissions)</li><li>TribesKids Check-in Form (167)</li><li>Benevolence Request (13)</li><li>Plan Your Visit (39)</li><li>TribesYouth Intern Application (59)</li></ul>
+      </div>
+      <div class="tile">
+        <span class="tile-ic"><svg><use href="#i-mail"/></svg></span>
+        <h3>7 send an automatic email</h3>
+        <ul class="plain"><li>Benevolence Request</li><li>TribesYouth Intern Application</li><li>Premarital Counseling and Wedding Officiant Request</li><li>Serve Team Card</li><li>Reach Pledge Campaign</li><li>Multiply Commitment Card</li><li>Tribe Leader</li></ul>
+      </div>
+      <div class="tile">
+        <span class="tile-ic"><svg><use href="#i-alert"/></svg></span>
+        <h3>Worth noticing</h3>
+        <ul class="plain"><li>Youth Connect Card has 168 submissions and no automation at all.</li><li>No form adds people to a list or sets a field.</li><li>The Connect Card's checkboxes for baptism, deciding to follow Jesus, and joining a Tribe do not feed any workflow.</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="slide" data-title="Automated vs manual">
+  <div class="card">
+    <h2>What is automated, and what is done by hand</h2>
+    <div class="grid grid-2">
+      <div class="tile tile-good">
+        <h3><svg class="ic"><use href="#i-bolt"/></svg> Automated today</h3>
+        <ul class="ticks"><li>Connect Card and TribesKids Check-in Form add people to First Time Guest, skipping anyone already started or completed.</li><li>Benevolence Request adds people to Benevolence.</li><li>Two forms add people to the hidden workflow.</li><li>Seven forms send an email on submission.</li></ul>
+      </div>
+      <div class="tile tile-manual">
+        <h3><svg class="ic"><use href="#i-hand"/></svg> Done by hand</h3>
+        <ul class="ticks ticks-manual"><li>Every workflow step: each one is assigned to a person.</li><li>The welcome email is typed by hand.</li><li>Both welcome texts are sent from staff phones.</li><li>The welcome card is handwritten.</li><li>Cards for Be Baptized, I Have Decided Card and Interest in Joining a Tribe are added by hand.</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 -->
+<section class="slide" data-title="The gaps">
+  <div class="card">
+    <h2>The gaps we found</h2>
+    <ol class="numbered">
+      <li><b>Three workflows have no way in.</b> Be Baptized, I Have Decided Card and Interest in Joining a Tribe only get cards when someone adds them.</li>
+      <li><b>Connect Card checkboxes go nowhere.</b> Baptism, deciding to follow Jesus, and joining a Tribe answers do not start any follow-up.</li>
+      <li><b>A workflow we could not see.</b> Plan Your Visit (39) and TribesYouth Intern Application (59) feed it. Only its creator can grant access.</li>
+      <li><b>No step automations.</b> No workflow step sends an email or acts on its own.</li>
+      <li><b>Lists drive nothing.</b> None of the 8 lists feeds a workflow. Three have auto-refresh turned off, two flagged as needing attention.</li>
+      <li><b>Youth Connect Card is unwired.</b> 168 submissions, no workflow, no email.</li>
+      <li><b>No other triggers.</b> Form automations are the only thing that starts a workflow.</li>
+    </ol>
+    <p class="note">Scope: only the 5 active workflows were reviewed. Archived or inactive workflows and snoozed cards were not.</p>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="slide slide-divider" data-title="Section 2: Planning Center vs Subsplash">
+  <div class="card card-divider">
+    <p class="eyebrow">Section 2</p>
+    <h2>Planning Center vs Subsplash</h2>
+    <p class="lead">Could Subsplash Workflows do this job better? What would it take to move?</p>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="slide" data-title="The recommendation">
+  <div class="card card-accent">
+    <p class="eyebrow">Recommendation</p>
+    <h2>Move only if the church commits to Subsplash One</h2>
+    <p class="lead">Subsplash can take over all five follow-up workflows. Make the move only as part of a church-wide decision to run people care in Subsplash One with Church Management, not as a feature upgrade on its own.</p>
+    <div class="grid grid-2">
+      <div class="tile"><h3><svg class="ic"><use href="#i-scale"/></svg> Subsplash is not more capable here</h3><p>Planning Center's 2026 releases can close the same gaps today, at no cost, without moving.</p></div>
+      <div class="tile"><h3><svg class="ic"><use href="#i-check"/></svg> The real case for Subsplash</h3><p>Consolidation: app, giving, people and workflows in one dashboard. Not better workflow features.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 -->
+<section class="slide" data-title="Side by side">
+  <div class="card card-wide">
+    <h2>Side by side</h2>
+    <p class="sub">What each platform's official documentation says.</p>
+    <div class="compare" role="table" aria-label="Planning Center vs Subsplash">
+      <div class="cmp-head" role="row"><span role="columnheader">Feature</span><span role="columnheader">Planning Center</span><span role="columnheader">Subsplash</span></div>
+      <div class="cmp-row" role="row"><span class="cmp-f" role="rowheader">A form creates a card</span><span data-l="Planning Center" class="yes">Yes</span><span data-l="Subsplash" class="yes">Yes</span></div>
+      <div class="cmp-row" role="row"><span class="cmp-f" role="rowheader">Start only on a specific answer</span><span data-l="Planning Center" class="yes">Yes</span><span data-l="Subsplash" class="part">Yes; checkbox matching not documented</span></div>
+      <div class="cmp-row" role="row"><span class="cmp-f" role="rowheader">Several forms into one workflow</span><span data-l="Planning Center" class="yes">Yes</span><span data-l="Subsplash" class="no">No, one form per workflow</span></div>
+      <div class="cmp-row" role="row"><span class="cmp-f" role="rowheader">Automatic step emails</span><span data-l="Planning Center" class="yes">Yes, and the card moves on</span><span data-l="Subsplash" class="yes">Yes, one per step, sent right away</span></div>
+      <div class="cmp-row" role="row"><span class="cmp-f" role="rowheader">Delay an email</span><span data-l="Planning Center" class="yes">Yes, with auto snooze</span><span data-l="Subsplash" class="no">No</span></div>
+      <div class="cmp-row" role="row"><span class="cmp-f" role="rowheader">Skip or branch steps</span><span data-l="Planning Center" class="yes">Yes</span><span data-l="Subsplash" class="part">Not documented</span></div>
+      <div class="cmp-row" role="row"><span class="cmp-f" role="rowheader">Texting inside a workflow</span><span data-l="Planning Center" class="part">Not documented</span><span data-l="Subsplash" class="part">Not documented; manual sends only</span></div>
+      <div class="cmp-row" role="row"><span class="cmp-f" role="rowheader">Cost</span><span data-l="Planning Center" class="yes">People is free; texts billed per credit</span><span data-l="Subsplash" class="part">Included with Subsplash One; pricing not published</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 -->
+<section class="slide" data-title="What Subsplash would automate">
+  <div class="card">
+    <h2>What would change, and what would not</h2>
+    <div class="grid grid-2">
+      <div class="tile tile-good">
+        <h3><svg class="ic"><use href="#i-bolt"/></svg> Subsplash would automate</h3>
+        <ul class="ticks"><li>The welcome email, as an automatic step email.</li><li>Starting baptism, decided and join-a-Tribe follow-up from Connect Card answers, once tested.</li><li>The Join a Tribe initial email.</li><li>The Benevolence "request received" email.</li><li>Step assignees and due dates.</li></ul>
+      </div>
+      <div class="tile tile-manual">
+        <h3><svg class="ic"><use href="#i-hand"/></svg> Stays manual either way</h3>
+        <ul class="ticks ticks-manual"><li>The handwritten welcome card.</li><li>Welcome texts. Personal texts from a staff phone remain the warmest option.</li><li>Benevolence decisions and conversations, by design.</li><li>Reviewing guest details and connecting guests to staff and serve team leaders.</li><li>Noting the Benevolence category on a profile.</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 -->
+<section class="slide" data-title="Subsplash limits">
+  <div class="card">
+    <h2>Limits to know about Subsplash</h2>
+    <ul class="iconlist">
+      <li><svg class="ic"><use href="#i-form"/></svg><div><b>One form per workflow.</b> First Time Guest is fed by two forms today, so the kids check-in form needs another approach.</div></li>
+      <li><svg class="ic"><use href="#i-mail"/></svg><div><b>Emails cannot be delayed.</b> They send the moment a card enters a step.</div></li>
+      <li><svg class="ic"><use href="#i-hand"/></svg><div><b>Texts are a manual send</b> outside workflows, and need Subsplash One with Church Management.</div></li>
+      <li><svg class="ic"><use href="#i-x"/></svg><div><b>Subsplash Forms cannot update existing profiles</b> or custom fields.</div></li>
+      <li><svg class="ic"><use href="#i-flow"/></svg><div><b>The Planning Center integration is about giving.</b> It syncs name, address and birth date one way, and does not move workflows. People data should come over by spreadsheet (CSV) import.</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 15 -->
+<section class="slide" data-title="A fair note on Planning Center">
+  <div class="card">
+    <h2>A fair note on Planning Center</h2>
+    <p class="lead">If Tribes stays, the same gaps can be closed in an afternoon, at no cost:</p>
+    <ol class="numbered">
+      <li>Add Connect Card automations for the three checkboxes so baptism, decided and join-a-Tribe answers start their follow-up.</li>
+      <li>Make the Welcome E-Mail step send automatically, with an after-hours hold (auto snooze).</li>
+      <li>Automate the Interest in Joining a Tribe initial email.</li>
+    </ol>
+    <p class="note">Planning Center can also keep two forms feeding First Time Guest, which Subsplash cannot.</p>
+  </div>
+</section>
+
+<!-- 16 -->
+<section class="slide" data-title="Seven-phase migration path">
+  <div class="card card-wide">
+    <h2>If the church moves: the seven-phase path</h2>
+    <p class="sub">Week ranges are estimates and assume the Subsplash account is active. Nothing in Planning Center is switched off until Phase 6.</p>
+    <ol class="phases">
+      <li><span class="ph-n">1</span><div><h3>Prerequisites</h3><span class="ph-w">Week 1</span><p>Confirm Subsplash One with Church Management, fix the login, name an Admin, assign Workflow Manager roles.</p></div></li>
+      <li><span class="ph-n">2</span><div><h3>People data</h3><span class="ph-w">Weeks 1-2</span><p>Export from Planning Center to CSV, keep a backup, clean it, import, merge duplicates, spot-check.</p></div></li>
+      <li><span class="ph-n">3</span><div><h3>Rebuild the forms</h3><span class="ph-w">Week 2</span><p>Connect Card, TribesKids Check-in and Benevolence Request, with separate first visit, baptism, decided and Tribe questions.</p></div></li>
+      <li><span class="ph-n">4</span><div><h3>Build the workflows</h3><span class="ph-w">Weeks 2-3</span><p>Steps, assignees, due dates and checklists. Connect forms and confirm who can see Benevolence.</p></div></li>
+      <li><span class="ph-n">5</span><div><h3>Emails, testing, parallel run</h3><span class="ph-w">Weeks 3-6</span><p>Write step emails, test with staff submissions, then run both systems for 2 to 4 Sundays.</p></div></li>
+      <li><span class="ph-n">6</span><div><h3>Cut over</h3><span class="ph-w">Week 6 or 7</span><p>Point every link and QR code to Subsplash, close Planning Center forms, let open cards finish there.</p></div></li>
+      <li><span class="ph-n">7</span><div><h3>Retire Planning Center workflows</h3><span class="ph-w">When open cards finish</span><p>Record history, archive the five workflows, map and rebuild the hidden workflow.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 17 -->
+<section class="slide" data-title="Risks to plan for">
+  <div class="card">
+    <h2>Risks to plan for</h2>
+    <div class="risks">
+      <div class="risk"><h3>Kids form cannot feed First Time Guest</h3><p>Launch a separate kids workflow; review after 60 days.</p></div>
+      <div class="risk"><h3>Checkbox fix could fail</h3><p>Test before cutover; fall back to manual cards.</p></div>
+      <div class="risk"><h3>Emails send instantly</h3><p>Put emails on steps entered after a staff action.</p></div>
+      <div class="risk"><h3>Guests can unsubscribe</h3><p>Keep key touches personal: calls, texts, the card.</p></div>
+      <div class="risk"><h3>Benevolence visibility</h3><p>Confirm who can see these sensitive requests before go-live.</p></div>
+      <div class="risk"><h3>Two systems at once</h3><p>One entry point for Subsplash and a weekly check-in.</p></div>
+      <div class="risk"><h3>Missing emails or duplicates</h3><p>CSV import, error review and duplicate merge.</p></div>
+      <div class="risk"><h3>Cost unknown</h3><p>Get a Subsplash One quote before Phase 2.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 18 -->
+<section class="slide" data-title="Open questions">
+  <div class="card">
+    <h2>Open questions for Tribes Church</h2>
+    <ol class="numbered">
+      <li>Has Tribes purchased Subsplash One with Church Management, and who is the account Admin?</li>
+      <li>Will Planning Center stay as the people or giving system, or be retired entirely? Does Tribes use Planning Center Giving?</li>
+      <li>Who owns the hidden workflow, and what are its steps?</li>
+      <li>Should the welcome email go out instantly, or after a staff review (the default proposed)?</li>
+      <li>Kids check-in: merge into the Connect Card, or run a separate kids workflow? Is Subsplash check-in planned?</li>
+      <li>Who should be able to see Benevolence cards?</li>
+      <li>Will staff keep texting from their phones or use Subsplash SMS? The Consent to Text form has 0 submissions.</li>
+      <li>What do the current welcome email and Benevolence Request email say, and who receives the latter?</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 19 -->
+<section class="slide" data-title="Not yet confirmed">
+  <div class="card">
+    <h2>Not yet confirmed</h2>
+    <p class="sub">Treat these as unknown until tested or confirmed by the vendor.</p>
+    <ul class="iconlist iconlist-q">
+      <li><svg class="ic"><use href="#i-q"/></svg><div>Whether a Subsplash form can start a workflow from a checkbox answer.</div></li>
+      <li><svg class="ic"><use href="#i-q"/></svg><div>One Subsplash form feeding several workflows: on the product page, not in the how-to guide.</div></li>
+      <li><svg class="ic"><use href="#i-q"/></svg><div>Whether Subsplash can skip duplicates, branch, auto-advance after an email, or let staff add cards by hand.</div></li>
+      <li><svg class="ic"><use href="#i-q"/></svg><div>Per-workflow privacy in Subsplash, which matters for Benevolence.</div></li>
+      <li><svg class="ic"><use href="#i-q"/></svg><div>Texting as a workflow step on either platform.</div></li>
+      <li><svg class="ic"><use href="#i-q"/></svg><div>Creating Subsplash cards through Zapier or the API.</div></li>
+      <li><svg class="ic"><use href="#i-q"/></svg><div>Subsplash One pricing and text message limits for Tribes' package.</div></li>
+      <li><svg class="ic"><use href="#i-q"/></svg><div>Tribes' own Subsplash account: not set up yet, and the dashboard login did not work.</div></li>
+      <li><svg class="ic"><use href="#i-q"/></svg><div>The hidden Planning Center workflow's name, steps and owner.</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 20 -->
+<section class="slide" data-title="Decisions">
+  <div class="card card-accent">
+    <p class="eyebrow">Decisions for church leaders</p>
+    <h2>What we need from you</h2>
+    <ol class="decisions">
+      <li><span class="d-n">1</span><div><h3>Stay or move?</h3><p>Close the gaps in Planning Center now at no cost, or commit church-wide to Subsplash One with Church Management.</p></div></li>
+      <li><span class="d-n">2</span><div><h3>Get a quote</h3><p>If moving is on the table, get a written Subsplash One quote before any data moves.</p></div></li>
+      <li><span class="d-n">3</span><div><h3>Unlock the hidden workflow</h3><p>Its owner shares it or describes it, so it can be mapped.</p></div></li>
+      <li><span class="d-n">4</span><div><h3>Welcome email timing</h3><p>Instantly on submission, or after a staff review.</p></div></li>
+      <li><span class="d-n">5</span><div><h3>Benevolence privacy</h3><p>Decide who can see Benevolence cards.</p></div></li>
+      <li><span class="d-n">6</span><div><h3>Kids check-in and texting</h3><p>Merge kids check-in or run a separate workflow; personal phones or Subsplash SMS.</p></div></li>
+    </ol>
+    <p class="meta">Prepared by The Tribe Maker for Tribes Church. Based on the Planning Center Workflow Map and the Planning Center vs Subsplash comparison, both dated November 20, 2026.</p>
+  </div>
+</section>
+
+</main>
+
+<div class="controls" role="group" aria-label="Slide navigation">
+  <button class="nav-btn" id="prevBtn" aria-label="Previous slide"><svg><use href="#i-left"/></svg></button>
+  <span class="counter" id="counter" aria-live="polite">1 / 20</span>
+  <button class="nav-btn" id="nextBtn" aria-label="Next slide"><svg><use href="#i-right"/></svg></button>
+</div>
+
+<script src="js/deck.js"></script>
+</body>
+</html>
