@@ -59,7 +59,7 @@ html.toc-open{overflow:hidden}
 .card-hero .lead{max-width:40ch}
 .sub{text-align:center;color:var(--ink-2);margin-top:-8px}
 .meta{font-size:1rem;color:var(--ink-2);text-align:center;max-width:56ch;margin:0 auto}
-.note{font-size:1.125rem;color:var(--ink-2);text-align:center;background:var(--muted-bg);border-radius:14px;padding:14px 16px}
+.note{font-size:1.25rem;color:var(--ink-2);text-align:center;background:var(--muted-bg);border-radius:14px;padding:14px 16px}
 .hint{display:inline-flex;align-items:center;justify-content:center;text-align:center;gap:8px;font-size:1rem;color:var(--accent);font-weight:600}
 
 .grid{display:grid;gap:16px;grid-template-columns:1fr}
@@ -114,7 +114,7 @@ ul.plain li::before{content:"";position:absolute;left:2px;top:.68em;width:7px;he
 .flow-head{display:none}
 .flow-row{display:flex;flex-direction:column;align-items:stretch;gap:6px;padding:16px;border:1px solid var(--line);border-radius:16px}
 .flow-src{display:flex;flex-direction:column;gap:8px}
-.chip{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;font-weight:600;font-size:1.125rem;line-height:1.35}
+.chip{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;font-weight:600;font-size:1.25rem;line-height:1.35}
 .chip.auto{background:var(--accent-soft);color:var(--accent)}
 .chip.manual{background:var(--warm-soft);color:var(--warm)}
 .flow-arrow{display:flex;justify-content:center;color:var(--ink-2)}
@@ -126,7 +126,7 @@ ul.plain li::before{content:"";position:absolute;left:2px;top:.68em;width:7px;he
 .flow-wf-hidden span{color:var(--ink-2)}
 .flow-wf-stack{gap:8px}
 .flow-steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:6px}
-.flow-steps li{counter-increment:s;display:flex;align-items:center;gap:10px;background:var(--muted-bg);border-radius:10px;padding:8px 12px;font-size:1.125rem;line-height:1.35}
+.flow-steps li{counter-increment:s;display:flex;align-items:center;gap:10px;background:var(--muted-bg);border-radius:10px;padding:8px 12px;font-size:1.25rem;line-height:1.35}
 .flow-steps li::before{content:counter(s);flex:none;width:28px;height:28px;border-radius:50%;background:#fff;border:1px solid var(--line);font-size:1rem;font-weight:700;display:flex;align-items:center;justify-content:center}
 .flow-steps-unknown li::before{content:"?"}
 .flow-steps-plain li::before{content:"1"}
@@ -136,7 +136,7 @@ ul.plain li::before{content:"";position:absolute;left:2px;top:.68em;width:7px;he
 .cmp-head{display:none}
 .cmp-row{display:grid;grid-template-columns:1fr;gap:8px;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
 .cmp-f{font-weight:600}
-.cmp-row>span[data-l]{display:flex;flex-direction:column;font-size:1.125rem;line-height:1.4;padding-left:14px;border-left:4px solid var(--line)}
+.cmp-row>span[data-l]{display:flex;flex-direction:column;font-size:1.25rem;line-height:1.4;padding-left:14px;border-left:4px solid var(--line)}
 .cmp-row>span[data-l]::before{content:attr(data-l);font-size:1rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
 .cmp-row .yes{border-left-color:var(--accent)!important}
 .cmp-row .part{border-left-color:#c9a227!important}
