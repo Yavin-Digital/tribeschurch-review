@@ -6,9 +6,8 @@
 <title>Tribes Church | Planning Center Review Deck</title>
 <meta name="description" content="Review deck: how Tribes Church's Planning Center workflows run today, and Planning Center vs Subsplash.">
 <meta name="robots" content="noindex, nofollow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232c6e63'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/deck.css">
 </head>
 <body>
@@ -44,12 +43,12 @@
   <button class="icon-btn" id="tocOpen" aria-label="Open slide list" aria-controls="toc" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
 </header>
 
-<nav class="toc" id="toc" aria-label="Slides" hidden>
+<div class="toc" id="toc" role="dialog" aria-modal="true" aria-label="Slides" hidden>
   <div class="toc-inner">
     <div class="toc-head"><h2>Slides</h2><button class="icon-btn" id="tocClose" aria-label="Close slide list"><svg><use href="#i-close"/></svg></button></div>
     <ol id="tocList"></ol>
   </div>
-</nav>
+</div>
 
 <main class="deck" id="deck">
 
