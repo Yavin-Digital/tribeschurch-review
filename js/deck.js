@@ -16,21 +16,33 @@
     li.appendChild(a); tocList.appendChild(li);
   });
   var links = tocList.querySelectorAll('a');
+  var reduceMotion = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+  var locking = false, lockTimer = 0, lockStart = 0, root = document.documentElement;
 
   function update(i) {
     current = i;
     bar.style.width = ((i + 1) / total * 100) + '%';
     counter.textContent = (i + 1) + ' / ' + total;
     prev.disabled = i === 0; next.disabled = i === total - 1;
+    if (prev.disabled && document.activeElement === prev) next.focus();
+    else if (next.disabled && document.activeElement === next) prev.focus();
     links.forEach(function (l, k) { l.setAttribute('aria-current', k === i ? 'true' : 'false'); });
   }
   function go(i) {
     i = Math.max(0, Math.min(total - 1, i));
-    slides[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    slides[i].scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'start' });
     update(i);
+    settle(true);
     if (history.replaceState) history.replaceState(null, '', '#' + slides[i].id);
   }
+  // Hold the counter on the target slide until the programmatic scroll has stopped
+  function settle(start) {
+    if (start) { locking = true; lockStart = Date.now(); }
+    clearTimeout(lockTimer);
+    lockTimer = setTimeout(function () { locking = false; detect(); }, 200);
+  }
   function detect() {
+    if (locking) return;
     var mid = window.innerHeight * 0.4, best = 0;
     for (var i = 0; i < total; i++) { if (slides[i].getBoundingClientRect().top <= mid) best = i; }
     if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) best = total - 1;
@@ -38,6 +50,7 @@
   }
   var ticking = false;
   window.addEventListener('scroll', function () {
+    if (locking && Date.now() - lockStart < 4000) settle(false);
     if (!ticking) { ticking = true; requestAnimationFrame(function () { detect(); ticking = false; }); }
   }, { passive: true });
   window.addEventListener('resize', detect);
@@ -46,7 +59,18 @@
   next.addEventListener('click', function () { go(current + 1); });
 
   document.addEventListener('keydown', function (e) {
-    if (!toc.hidden) { if (e.key === 'Escape') closeToc(); return; }
+    if (!toc.hidden) {
+      if (e.key === 'Escape') { closeToc(); return; }
+      if (e.key === 'Tab') {
+        var f = toc.querySelectorAll('a[href],button:not([disabled])');
+        if (!f.length) return;
+        var first = f[0], last = f[f.length - 1], a = document.activeElement;
+        if (!toc.contains(a)) { e.preventDefault(); first.focus(); }
+        else if (e.shiftKey && a === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && a === last) { e.preventDefault(); first.focus(); }
+      }
+      return;
+    }
     if (e.target.closest && e.target.closest('input,textarea,select')) return;
     var k = e.key;
     if (k === 'ArrowRight' || k === 'PageDown' || (k === ' ' && !e.shiftKey)) { e.preventDefault(); go(current + 1); }
@@ -64,14 +88,16 @@
     if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5 && Date.now() - st < 800) go(current + (dx < 0 ? 1 : -1));
   }, { passive: true });
 
-  function openToc() { toc.hidden = false; tocOpen.setAttribute('aria-expanded', 'true'); (links[current] || tocClose).focus(); }
-  function closeToc() { toc.hidden = true; tocOpen.setAttribute('aria-expanded', 'false'); tocOpen.focus(); }
+  function openToc() { toc.hidden = false; root.classList.add('toc-open'); tocOpen.setAttribute('aria-expanded', 'true'); (links[current] || tocClose).focus(); }
+  function closeToc() { toc.hidden = true; root.classList.remove('toc-open'); tocOpen.setAttribute('aria-expanded', 'false'); tocOpen.focus(); }
   tocOpen.addEventListener('click', openToc);
   tocClose.addEventListener('click', closeToc);
   toc.addEventListener('click', function (e) { if (e.target === toc) closeToc(); });
 
-  var h = location.hash && document.querySelector(location.hash);
+  var hid = '';
+  try { hid = decodeURIComponent(location.hash.slice(1)); } catch (err) { hid = ''; }
+  var h = hid ? document.getElementById(hid) : null;
   var start = h ? slides.indexOf(h) : 0;
   update(start < 0 ? 0 : start);
-  if (start > 0) slides[start].scrollIntoView();
+  if (start > 0) slides[start].scrollIntoView({ behavior: 'instant', block: 'start' });
 })();
